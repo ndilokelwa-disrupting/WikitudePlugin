@@ -138,7 +138,7 @@ IrAndGeo.errorLoading = function(error) {
 
 IrAndGeo.initIr = function() {
 
-    this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker.wtc", {
+    this.targetCollectionResource = new AR.TargetCollectionResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/tracker.wtc", {
         onLoaded: function() {
             IrAndGeo.resourcesLoaded = true;
             IrAndGeo.loadingStepDone();
@@ -203,17 +203,17 @@ AR.context.onLocationChanged = function(latitude, longitude, altitude, accuracy)
 
 /* Create the image resources that are used for the marker and the buttons. */
 
-IrAndGeo.res.deal = new AR.ImageResource("assets/ruption_color.png", {
+IrAndGeo.res.deal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_color.png", {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
 
-IrAndGeo.res.deal = new AR.ImageResource("assets/ruption_black.png", {
+IrAndGeo.res.deal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_black.png", {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
 
-IrAndGeo.res.deal = new AR.ImageResource("assets/outsystems.png", {
+IrAndGeo.res.deal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/outsystems.png", {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
