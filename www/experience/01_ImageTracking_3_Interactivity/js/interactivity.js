@@ -12,7 +12,7 @@ var World = {
             Each target in the target collection is identified by its target name. By using this
             target name, it is possible to create an AR.ImageTrackable for every target in the target collection.
          */
-        this.targetCollectionResource = new AR.TargetCollectionResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/tracker.wtc", {
+        this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker.wtc", {
             onError: World.onError
         });
 
