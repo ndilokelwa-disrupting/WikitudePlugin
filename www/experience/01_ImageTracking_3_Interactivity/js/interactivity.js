@@ -12,7 +12,7 @@ var World = {
             Each target in the target collection is identified by its target name. By using this
             target name, it is possible to create an AR.ImageTrackable for every target in the target collection.
          */
-        this.targetCollectionResource = new AR.TargetCollectionResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/magazine.wtc", {
+        this.targetCollectionResource = new AR.TargetCollectionResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/tracker.wtc", {
             onError: World.onError
         });
 
@@ -44,7 +44,7 @@ var World = {
         });
 
         /* Create overlay for page one of the magazine. */
-        var imgOne = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/imageOne.png", {
+        var imgOne = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/ruption_color.png", {
             onError: World.onError
         });
         var overlayOne = new AR.ImageDrawable(imgOne, 1, {
@@ -74,7 +74,7 @@ var World = {
             Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a
             certain group of targets.
         */
-        this.pageOne = new AR.ImageTrackable(this.tracker, "pageOne", {
+        this.pageOne = new AR.ImageTrackable(this.tracker, "CircleRuption_Black_MagentaFont_Large", {
             drawables: {
                 cam: [overlayOne, pageOneButton]
             },
@@ -85,7 +85,7 @@ var World = {
         /*
             Similar to the first part, the image resource and the AR.ImageDrawable for the second overlay are created.
         */
-        var imgTwo = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/imageTwo.png", {
+        var imgTwo = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/outsystems.png", {
             onError: World.onError
         });
         var overlayTwo = new AR.ImageDrawable(imgTwo, 0.5, {
@@ -109,7 +109,7 @@ var World = {
             The AR.ImageTrackable for the second page uses the same tracker but with a different target name and the
             second overlay.
         */
-        this.pageTwo = new AR.ImageTrackable(this.tracker, "pageTwo", {
+        this.pageTwo = new AR.ImageTrackable(this.tracker, "ec1b76ce-03d2-4f0b-a4a6-52e7bf56dc8c", {
             drawables: {
                 cam: [overlayTwo, pageTwoButton]
             },
