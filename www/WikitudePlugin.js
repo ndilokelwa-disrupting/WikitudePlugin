@@ -343,7 +343,7 @@
 	/*var wikitudePlugin = new WikitudePlugin();
 	module.exports = wikitudePlugin;*/
 
-	// Installation constructor that binds ToastyPlugin to window
+	// Installation constructor that binds WkitudePlugin to window
 	WikitudePlugin.install = function () {
 		if (!window.plugins) {
 			window.plugins = {};
