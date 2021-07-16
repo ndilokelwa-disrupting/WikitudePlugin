@@ -147,3 +147,4 @@ var World = {
 };
 
 World.init();
+alert("Eu corri até aqui!")
