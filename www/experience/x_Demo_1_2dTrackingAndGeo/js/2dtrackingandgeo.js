@@ -203,21 +203,24 @@ AR.context.onLocationChanged = function(latitude, longitude, altitude, accuracy)
 
 /* Create the image resources that are used for the marker and the buttons. */
 
-IrAndGeo.res.deal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_color.png", {
+/* Create the image resources that are used for the marker and the buttons. */
+IrAndGeo.res.marker = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_black.png, {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
-
-IrAndGeo.res.deal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_black.png", {
+IrAndGeo.res.buttonWeb = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_black.png", {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
-
+IrAndGeo.res.buttonStores = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/ruption_black.png", {
+    onLoaded: IrAndGeo.loadingStepDone,
+    onError: IrAndGeo.errorLoading
+});
+IrAndGeo.res.buttonDeal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/outsystems.png", {
+    onLoaded: IrAndGeo.loadingStepDone,
+    onError: IrAndGeo.errorLoading
+});
 IrAndGeo.res.deal = new AR.ImageResource("https://ndilokelwa-luis.outsystemscloud.com/WikitudePlugin/TrackingAndGeo/assets/outsystems.png", {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
-
-IrAndGeo.initIr();
-
-IrAndGeo.loadingStepDone();
