@@ -138,7 +138,7 @@ IrAndGeo.errorLoading = function(error) {
 
 IrAndGeo.initIr = function() {
 
-    this.targetCollectionResource = new AR.TargetCollectionResource("assets/ShopAd.wtc", {
+    this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker.wtc", {
         onLoaded: function() {
             IrAndGeo.resourcesLoaded = true;
             IrAndGeo.loadingStepDone();
@@ -219,6 +219,21 @@ IrAndGeo.res.buttonDeal = new AR.ImageResource("assets/YourShop_GetADeal.png", {
     onError: IrAndGeo.errorLoading
 });
 IrAndGeo.res.deal = new AR.ImageResource("assets/YourShop_Deal.png", {
+    onLoaded: IrAndGeo.loadingStepDone,
+    onError: IrAndGeo.errorLoading
+});
+
+IrAndGeo.res.deal = new AR.ImageResource("assets/ruption_color.png", {
+    onLoaded: IrAndGeo.loadingStepDone,
+    onError: IrAndGeo.errorLoading
+});
+
+IrAndGeo.res.deal = new AR.ImageResource("assets/ruption_black.png", {
+    onLoaded: IrAndGeo.loadingStepDone,
+    onError: IrAndGeo.errorLoading
+});
+
+IrAndGeo.res.deal = new AR.ImageResource("assets/outsystems.png", {
     onLoaded: IrAndGeo.loadingStepDone,
     onError: IrAndGeo.errorLoading
 });
