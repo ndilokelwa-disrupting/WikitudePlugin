@@ -12,7 +12,7 @@ var World = {
             Each target in the target collection is identified by its target name. By using this
             target name, it is possible to create an AR.ImageTrackable for every target in the target collection.
          */
-        this.targetCollectionResource = new AR.TargetCollectionResource("assets/magazine.wtc", {
+        this.targetCollectionResource = new AR.TargetCollectionResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/magazine.wtc", {
             onError: World.onError
         });
 
@@ -39,12 +39,12 @@ var World = {
             The button is created similar to the overlay feature. An AR.ImageResource defines the look of the button
             and is reused for both buttons.
         */
-        this.imgButton = new AR.ImageResource("assets/wwwButton.jpg", {
+        this.imgButton = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/wwwButton.jpg", {
             onError: World.onError
         });
 
         /* Create overlay for page one of the magazine. */
-        var imgOne = new AR.ImageResource("assets/imageOne.png", {
+        var imgOne = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/imageOne.png", {
             onError: World.onError
         });
         var overlayOne = new AR.ImageDrawable(imgOne, 1, {
@@ -85,7 +85,7 @@ var World = {
         /*
             Similar to the first part, the image resource and the AR.ImageDrawable for the second overlay are created.
         */
-        var imgTwo = new AR.ImageResource("assets/imageTwo.png", {
+        var imgTwo = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/imageTwo.png", {
             onError: World.onError
         });
         var overlayTwo = new AR.ImageDrawable(imgTwo, 0.5, {
