@@ -202,26 +202,6 @@ AR.context.onLocationChanged = function(latitude, longitude, altitude, accuracy)
 };
 
 /* Create the image resources that are used for the marker and the buttons. */
-IrAndGeo.res.marker = new AR.ImageResource("assets/YourShop_Marker.png", {
-    onLoaded: IrAndGeo.loadingStepDone,
-    onError: IrAndGeo.errorLoading
-});
-IrAndGeo.res.buttonWeb = new AR.ImageResource("assets/YourShop_OpenWebsite.png", {
-    onLoaded: IrAndGeo.loadingStepDone,
-    onError: IrAndGeo.errorLoading
-});
-IrAndGeo.res.buttonStores = new AR.ImageResource("assets/YourShop_FindShops.png", {
-    onLoaded: IrAndGeo.loadingStepDone,
-    onError: IrAndGeo.errorLoading
-});
-IrAndGeo.res.buttonDeal = new AR.ImageResource("assets/YourShop_GetADeal.png", {
-    onLoaded: IrAndGeo.loadingStepDone,
-    onError: IrAndGeo.errorLoading
-});
-IrAndGeo.res.deal = new AR.ImageResource("assets/YourShop_Deal.png", {
-    onLoaded: IrAndGeo.loadingStepDone,
-    onError: IrAndGeo.errorLoading
-});
 
 IrAndGeo.res.deal = new AR.ImageResource("assets/ruption_color.png", {
     onLoaded: IrAndGeo.loadingStepDone,
