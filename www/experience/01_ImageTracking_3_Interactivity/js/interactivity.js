@@ -12,7 +12,7 @@ var World = {
             Each target in the target collection is identified by its target name. By using this
             target name, it is possible to create an AR.ImageTrackable for every target in the target collection.
          */
-        this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker.wtc", {
+        this.targetCollectionResource = new AR.TargetCollectionResource("https://www.docummedia.com/WikitudePlugin/01_ImageTracking_3_Interactivity/assets/tracker.wtc", {
             onError: World.onError
         });
 
@@ -39,12 +39,12 @@ var World = {
             The button is created similar to the overlay feature. An AR.ImageResource defines the look of the button
             and is reused for both buttons.
         */
-        this.imgButton = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/wwwButton.jpg", {
+        this.imgButton = new AR.ImageResource("https://www.docummedia.com/WikitudePlugin/01_ImageTracking_3_Interactivity/assets/wwwButton.jpg", {
             onError: World.onError
         });
 
         /* Create overlay for page one of the magazine. */
-        var imgOne = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/ruption_color.png", {
+        var imgOne = new AR.ImageResource("https://www.docummedia.com/WikitudePlugin/01_ImageTracking_3_Interactivity/assets/ruption_color.png", {
             onError: World.onError
         });
         var overlayOne = new AR.ImageDrawable(imgOne, 1, {
@@ -58,7 +58,7 @@ var World = {
             createWwwButton(url, options). The returned drawable is then added to the drawables.cam array on
             creation of the AR.ImageTrackable.
         */
-        var pageOneButton = this.createWwwButton("https://www.blue-tomato.com/en-US/products/?q=sup", 0.1, {
+        var pageOneButton = this.createWwwButton("https://www.ruption.pt", 0.1, {
             translate: {
                 x: -0.25,
                 y: -0.25
@@ -85,7 +85,7 @@ var World = {
         /*
             Similar to the first part, the image resource and the AR.ImageDrawable for the second overlay are created.
         */
-        var imgTwo = new AR.ImageResource("https://github.com/ndilokelwa-disrupting/WikitudePlugin/blob/main/www/experience/01_ImageTracking_3_Interactivity/assets/outsystems.png", {
+        var imgTwo = new AR.ImageResource("https://www.docummedia.com/WikitudePlugin/01_ImageTracking_3_Interactivity/assets/outsystems.png", {
             onError: World.onError
         });
         var overlayTwo = new AR.ImageDrawable(imgTwo, 0.5, {
@@ -96,7 +96,7 @@ var World = {
         });
 
         var pageTwoButton = this.createWwwButton(
-            "https://www.maciag-offroad.de/kini-red-bull-downhill-helm-mtb-silber-blau-sid50616.html",
+            "https://www.outsystems.com",
             0.15, {
                 translate: {
                     y: -0.25
